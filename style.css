@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Ubuntu+Mono&display=swap');
+
+/*Colors and font*/
+
+h1, h2, a {
+	font-family: 'Roboto Condensed', sans-serif; 
+}	
+
+body {
+	font-family: 'Ubuntu Mono', monospace;
+	background-color: #EFFCEF;
+	font-size: 16px;
+}
+
+a {
+  font-weight: bold; 
+  text-decoration: none;
+  color: #0f4c81;
+}
+
+a:hover{
+	/*color: #4d4640;*/
+	opacity: 0.5;	
+}
+
+/*div { 
+	background-color: #1f6650;
+	padding: 36px;
+	margin: 16px;
+
+ }
+*/
+
+/*Classes*/
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.card-gray {
+	background-color: #589167;
+	padding: 24px 40px;
+	margin: 26px auto;
+	width: 550px;	
+	border-radius: 3px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	text-align: center;
+	border: 1px solid lightgrey;
+}
+
+.footer {
+	background-color: #589167;
+	padding: 4px 40px;
+	margin: 26px auto;
+	width: 550px;	
+	border-radius: 3px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	text-align: center;
+	border: 1px solid lightgrey;
+}
+
+.btn-color {
+	background-color: #4d4646;
+	color: #589167;
+	padding: 8px 24px;
+	border-radius: 8px;
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.1)
+}
+
+.list-inline {
+	list-style: none;
+	padding: 0;
+}
+
+.list-inline li {
+	display: inline-block;
+}
+
+.social-icon {
+	font-size: 32px;
+	color: #4d4646;
+}
+
+.social-icon:hover{
+	opacity: 0.5;	
+}
+
+/*Responsiveness*/
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}

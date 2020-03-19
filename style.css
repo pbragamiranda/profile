@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Ubuntu+Mono&display=swap');
 
 /*Colors and font*/
 
 h1, h2, a {
 	font-family: 'Roboto Condensed', sans-serif; 
 }	
+
+h1, h2 {
+	font-size: 18px;
+}
+
+h2 {
+	font-weight: lighter;
+}
 
 body {
 	font-family: 'Ubuntu Mono', monospace;
@@ -40,8 +48,9 @@ a:hover{
 .card-green {
 	background-color: #589167;
 	padding: 24px 40px;
-	margin: 26px auto;
-	width: 550px;	
+	margin: 26px left;
+	width: 200px;
+	height: 500px;	
 	border-radius: 3px;
 	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
 	text-align: center;
@@ -51,8 +60,8 @@ a:hover{
 .footer {
 	background-color: #589167;
 	padding: 4px 40px;
-	margin: 26px auto;
-	width: 550px;	
+	margin: 26px left;
+	width: 200px;	
 	border-radius: 3px;
 	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
 	text-align: center;
@@ -67,6 +76,18 @@ a:hover{
 	box-shadow: 0px 5px 15px rgba(0,0,0,0.1)
 }
 
+.btn-switch {
+	background-color: #4d4646;
+	color: #589167;
+	padding: 8px 24px;
+	border-radius: 8px;
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+	position: absolute;
+	margin: 16px;
+	top: 0px;
+    right: 0px;
+}
+
 .list-inline {
 	list-style: none;
 	padding: 0;
@@ -77,7 +98,7 @@ a:hover{
 }
 
 .social-icon {
-	font-size: 32px;
+	font-size: 24px;
 	color: #4d4646;
 }
 

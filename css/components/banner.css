@@ -1,0 +1,24 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+	background-color: #121212;
+	padding-top: 24px;
+	padding-left: 32px;
+}
+
+.banner h1 {
+	font-size: 157px;
+	color: #FFFFFF
+	padding-bottom: 0px;
+}
+
+.banner h2 {
+	font-size: 50px;
+	color: #FFFFFF	
+}
+
+.menu {
+	position: sticky;
+	top: 0;
+	color: #FFFFFF
+}

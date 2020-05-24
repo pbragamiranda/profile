@@ -1,0 +1,15 @@
+.navbar {
+	position: sticky;
+	top: 16px;
+	color: #FFFFFF
+}
+
+.navbar i {
+	padding-left: 1286px;
+	font-size: 35px;
+}
+
+.navbar i:hover{
+  color: #79d70f;
+}
+

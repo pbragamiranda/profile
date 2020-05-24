@@ -3,22 +3,20 @@
   background-position: center;
 	background-color: #121212;
 	padding-top: 24px;
-	padding-left: 32px;
+	padding-left: 40px;
 }
 
-.banner h1 {
+.title {
 	font-size: 157px;
-	color: #FFFFFF
-	padding-bottom: 0px;
+	color: #FFFFFF;
 }
 
-.banner h2 {
+.subtitle {
 	font-size: 50px;
-	color: #FFFFFF	
+	color: #FFFFFF
 }
 
-.menu {
-	position: sticky;
-	top: 0;
-	color: #FFFFFF
+.bigdot {
+	font-size: 50px;
+	color: #06623b
 }

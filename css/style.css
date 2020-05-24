@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Ubuntu+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap')
 @import url("components/banner.css");
 @import url("components/iconlist.css");
 @import url("components/navbar.css");
@@ -11,27 +10,27 @@ body {
 	background-color: #121212;
 }
 
-.title {
-	font-size: 157px;
-	color: #FFFFFF
-}
 
-.subtitle {
-	font-size: 50px;
-	color: #FFFFFF
-}
+/*Responsiveness*/
 
-.bigdot {
-	font-size: 50px;
-	color: #06623b
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
 }
-
-.banner {
-  background-size: cover;
-  background-position: center;
-	background-color: #121212;
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
 }
-
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
 
 
 

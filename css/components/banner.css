@@ -6,7 +6,27 @@
 	padding-left: 40px;
 }
 
-.title {
+.banner h1 {
+	font-size: 157px;
+	color: #FFFFFF;
+}
+
+.banner h2 {
+	font-size: 50px;
+	color: #FFFFFF
+}
+
+.line {
+	background-color: #79d70f;
+	/*padding-top: 24px;*/
+	/*padding-bottom: 24px;*/
+}
+
+.line p {
+	color: #79d70f;
+}
+
+/*.title {
 	font-size: 157px;
 	color: #FFFFFF;
 }
@@ -19,4 +39,4 @@
 .bigdot {
 	font-size: 50px;
 	color: #06623b
-}
+}*/

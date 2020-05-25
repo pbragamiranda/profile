@@ -20,6 +20,11 @@
   font-size: 26px;
 }
 
+.cards a hover {
+  font-size: 30px;
+  color: #79d70f;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

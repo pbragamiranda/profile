@@ -1,25 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Ubuntu+Mono&display=swap');
-@import url("components/banner.css");
-@import url("components/list.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url("components/navbar.css");
-@import url("components/footer.css");
 @import url("components/container.css");
+@import url("components/photo.css");
+@import url("components/topics.css");
 @import url("components/cards.css");
-
-
-/*Colors and font*/
-
-body {
-	background-color: #121212;
-}
-
-
-
-
-
-
-
-
-
 
 

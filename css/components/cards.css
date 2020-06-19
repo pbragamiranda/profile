@@ -1,69 +1,41 @@
-.card-category {
-  background-size: cover;
-  background-position: center;
+.portfolio {
+	display: flex;
+	justify-content: space-around;
+	width: 800px;
+	font-family: 'Poppins', sans-serif;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.portfolio-card {
+	margin-top: 8px;
+	border-radius: 8px;
+	border: 1px solid rgb(82, 168, 71);
+	width: 350px;
+	height: 350px;
+	padding: 8px;
+}
+
+.portfolio-card h2 {
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+.portfolio-card h2:hover {
+	color: rgb(82, 168, 71);
+}
+
+.portfolio-card p {
+	font-size: 16px;
+	color: gray;
+}
+
+.portfolio-card img {
+	width:  250px;
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 8px;
+  border-radius: 16px;
+  filter: grayscale(100%);
 }
 
-.card-category a {
-  text-decoration: none;
-  color: inherit;
-  text-decoration: inherit;
-  font-size: 26px;
-}
-
-.cards a hover {
-  font-size: 30px;
-  color: #79d70f;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  padding-bottom: 32px;
-  
-}
-
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}

@@ -1,0 +1,14 @@
+.photo {
+  margin-right: 50px;
+}
+
+.photo img {
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: 1px solid white;
+    box-shadow: 2px -2px 33px #ccc;
+}
+

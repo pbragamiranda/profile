@@ -8,7 +8,8 @@
 }
 
 .portfolio-card {
-	margin-top: 8px;
+
+	margin: 8px 10px 8px 10px;
 	border-radius: 8px;
 	border: 1px solid rgb(82, 168, 71);
 	width: 350px;
@@ -20,10 +21,12 @@
 	text-decoration: none;
 	font-weight: lighter;
 	font-size: 24px;
+	color: black;
 }
 
 .portfolio-card h2:hover {
 	color: rgb(82, 168, 71);
+	text-decoration: none;
 }
 
 .portfolio-card p {
@@ -39,3 +42,6 @@
   filter: grayscale(100%);
 }
 
+.portfolio-card img:hover {
+  filter: grayscale(1%);
+}

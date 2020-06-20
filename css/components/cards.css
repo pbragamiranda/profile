@@ -5,10 +5,10 @@
 	font-family: 'Poppins', sans-serif;
 	margin: 20px auto;
 	text-align: center;
+	text-decoration: none!important;
 }
 
 .portfolio-card {
-
 	margin: 8px 10px 8px 10px;
 	border-radius: 8px;
 	border: 1px solid rgb(82, 168, 71);
@@ -18,7 +18,7 @@
 }
 
 .portfolio-card h2 {
-	text-decoration: none;
+	text-decoration: none!important;
 	font-weight: lighter;
 	font-size: 24px;
 	color: black;
@@ -26,7 +26,7 @@
 
 .portfolio-card h2:hover {
 	color: rgb(82, 168, 71);
-	text-decoration: none;
+	text-decoration: none!important;
 }
 
 .portfolio-card p {

@@ -1,0 +1,67 @@
+.recent-post {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-post h2 {
+  display: inline-block;
+  padding: 0px 18px;
+  padding-top: 16px;
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+.post-container { 
+	width: 800px;
+	margin: 40px auto;
+	display: block;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+ }
+
+.post-container h1 { 
+	text-align: center;
+ }	
+
+.post-container h3 { 
+	text-align: center;
+	color: gray;
+	font-size: 18px;
+ }	
+
+.post-container p { 
+	line-height: 1.5;
+ }
+
+.post-container img { 
+ 	margin: 10px auto 20px;
+  display: block;
+  width: 700px;
+  height: auto;
+  padding: 8px;
+ }
+
+
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font: normal normal 14px/16px "Courier New",Courier,Monospace;
+    line-height: 1.0;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    padding: .5em 1em;
+    display: block;
+    word-wrap: break-word;
+
+    margin-left: 30px;
+    overflow: auto;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    counter-reset: line;
+}

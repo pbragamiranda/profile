@@ -34,6 +34,10 @@
 	color: gray;
 }
 
+.portfolio-card a {
+	text-decoration: none;
+}
+
 .portfolio-card img {
 	width:  250px;
   height: 200px;
@@ -44,4 +48,72 @@
 
 .portfolio-card img:hover {
   filter: grayscale(1%);
+}
+
+
+.blog {
+	display: grid;
+	/*justify-content: space-around;*/
+	width: 890px;
+	font-family: 'Poppins', sans-serif;
+	margin: 20px auto;
+	text-align: center;
+	text-decoration: none!important;
+}
+
+.blog-card {
+	overflow: hidden;
+	display: flex;
+  align-items: center;
+	margin: 8px 10px 8px 10px;
+	border-radius: 8px;
+	border: 1px solid rgb(82, 168, 71);
+	height: 140px;
+	padding: 8px;	
+}
+
+.blog-card h2 {
+	text-decoration: none!important;
+	font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+
+}
+
+.blog-card h2:hover {
+	color: rgb(82, 168, 71);
+	text-decoration: none!important;
+}
+
+.blog-card p {
+	font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+	color: gray;
+}
+
+.blog-card img {
+ 	height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.blog-card img:hover {
+  filter: grayscale(1%);
+}
+
+.blog-card .blog-card-infos {
+  padding: 36px;
+}
+
+
+.blog-card .blog-card-infos h2 {
+  cursor: pointer;
+}
+
+.blog-card .blog-card-infos a {
+  text-decoration: none;
 }

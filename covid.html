@@ -1,0 +1,105 @@
+<head>
+  <title>Pedro Miranda</title>
+ 	<meta name= "description" content="Pedro Miranda">
+ 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="container" style="margin: 20px auto;">
+  <div class="navbar navbar-expand-sm navbar-light navbar-design">
+    <a class="navbar-brand" href="index.html">
+      <img src="https://i.ibb.co/TmBCfX1/cafe.jpg"/>
+      <b>Pedro</b> Miranda
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#port">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html" target="blank">Data Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://drive.google.com/file/d/1ecmdobRoJsUMyrngzHf8vEoxHYhoV2QL/view?usp=sharing" target="blank">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+  </div>
+</div>
+<div class="post-container">
+  <h1>Extrator de Dados - Coronavírus</h1>
+  <h3>19 de Setembro, 2019</h3>
+  <img src="./images/posts/covid.png" alt=""> 
+  <p>
+    Script em Python e automatização diária de extração em Crontab para coletar os dados referentes aos casos confirmados, mortes e recuperações do coronavírus.
+  </p>
+  <p>
+    <a href="https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases" target="blank">[Fonte dos Dados: The Humanitarian Data Exchange]</a>
+  </p>
+    <pre>
+      <code>
+        import requests
+
+        print('Iniciando o download dos dados')
+
+        url_confirmados = 'shorturl.at/hSUY2'
+
+        url_mortes = 'shorturl.at/amyJS'
+
+        url_recuperados = 'shorturl.at/beP56  '
+
+        confirmados = requests.get(url_confirmados)
+        mortes = requests.get(url_mortes)
+        recuperados = requests.get(url_recuperados)
+
+        with open('/home/blackmamba/Documents/analise_dados/corona-virus/corona-dados/time_series_2019-ncov-Confirmed.csv', 'wb') as f:
+            f.write(confirmados.content)
+
+        with open('/home/blackmamba/Documents/analise_dados/corona-virus/corona-dados/time_series_2019-ncov-Deaths.csv', 'wb') as f:
+            f.write(mortes.content)
+            
+        with open('/home/blackmamba/Documents/analise_dados/corona-virus/corona-dados/time_series_2019-ncov-Recovered.csv', 'wb') as f:
+            f.write(recuperados.content)
+           
+
+        print('Download concluído com sucesso')
+      </code>
+    </pre>
+  <p>
+   Criando uma rotina diária em <a href="https://crontab.guru/every-day-at-1am">Crontab</a>
+  </p>
+  <pre>
+    <code>
+      #Ubuntu only
+      #open terminal
+      Crtl + t
+
+      #start crontab
+      crontab -e 
+
+      #selecione o editor que deseja 
+      /bin/nano
+
+      #cria rotina que executa o script todo dia às 7am
+      0 7 * * * python /home/blackmamba/Documents/analise_dados/corona-virus/pega-dados.py
+
+      #salva
+      Crlt + O
+
+      #fecha e sai
+      Crlt + X
+    </code>
+  </pre>
+</div>
